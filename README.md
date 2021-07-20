@@ -1,48 +1,47 @@
-# GarpixCMS Empty Template
+# Garpix Vacancy
 
-Cookiecutter template for GarpixCMS == 1.0.0.
 
-## Install
+## Быстрый старт
 
-1. Install Docker and docker-compose.
-   
-For Debian, Ubuntu:
+Установка:
 
-```
-su
-apt update; apt upgrade -y; apt install -y curl; curl -sSL https://get.docker.com/ | sh; curl -L https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
+```bash
+pip install garpix_vacancy
 ```
 
-Don't forget press CTRL+D to exit from super user account.
+Добавьте `garpix_vacancy` в `INSTALLED_APPS`:
 
-2. Apply environment variables:
+```python
+# settings.py
 
-```
-cp example.env .env
-```
-
-3. Change a random string for `SECRET_KEY` and `POSTGRES_PASSWORD` in `.env`.
-
-4. Install dependencies:
-
-```
-pipenv install
-pipenv shell
+INSTALLED_APPS = [
+    # ...
+    'garpix_vacancy',
+]
 ```
 
-5. Up docker-compose, migrate database and create super user:
 
-```
-docker-compose up -d
-python3 backend/manage.py makemigrations
-python3 backend/manage.py migrate
-python3 backend/manage.py createsuperuser
-```
+Также, в settings.py необходимо добавить миксины:
 
-6. Run the server:
-
-```
-python3 backend/manage.py runserver
+```bash
+GARPIX_VACANCY_MIXIN = 'garpix_page.models.BasePage'
+GARPIX_CONTACT_MIXIN = 'garpix_page.models.BasePage'
 ```
 
-7. Enjoy!
+
+
+# Changelog
+
+Смотри [CHANGELOG.md](CHANGELOG.md).
+
+# Contributing
+
+Смотри [CONTRIBUTING.md](CONTRIBUTING.md).
+
+# License
+
+[MIT](LICENSE)
+
+---
+
+Developed by Garpix / [https://garpix.com](https://garpix.com)
