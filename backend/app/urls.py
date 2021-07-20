@@ -1,3 +1,6 @@
-from garpixcms.urls import *  # noqa
+from django.urls import path, include
+from garpixcms.urls import urlpatterns
 
-urlpatterns = [] + urlpatterns  # noqa
+urlpatterns = [
+    path('vacancy/', include('garpix_vacancy.urls')),
+] + urlpatterns
