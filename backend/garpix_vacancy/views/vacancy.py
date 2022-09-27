@@ -6,5 +6,5 @@ from ..serializers import VacancySerializer
 
 
 class VacancyListView(RetrieveModelMixin, ListModelMixin, GenericViewSet):
-    queryset = Vacancy.objects.all()
+    queryset = Vacancy.active_objects.all()
     serializer_class = VacancySerializer

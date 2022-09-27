@@ -1,1 +1,0 @@
-from .vacancy import VacancyListView

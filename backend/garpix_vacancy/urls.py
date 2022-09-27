@@ -1,9 +1,10 @@
 from rest_framework.routers import DefaultRouter
-from . import viewsets
+from . import views
 
 
 router = DefaultRouter()
 
-router.register('vacancy', viewsets.VacancyListView)
+router.register('vacancy', views.VacancyListView)
+router.register('vacancy_application', views.VacancyApplicationView)
 
 urlpatterns = router.urls
