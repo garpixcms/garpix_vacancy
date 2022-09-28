@@ -29,6 +29,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'garpixcms >= 1.7.1',
+        'garpixcms >= 3.37.0',
     ],
 )
