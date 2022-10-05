@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from ..models import Contact
+from ..models.application import VacancyApplication
 
 
 class VacancyApplicationSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Contact
+        model = VacancyApplication
         fields = '__all__'

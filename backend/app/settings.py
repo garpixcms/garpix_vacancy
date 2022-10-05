@@ -9,3 +9,5 @@ GARPIX_VACANCY_TAG_MODEL = 'garpix_vacancy.models.Tag'
 MIGRATION_MODULES.update({  # noqa
     'garpix_vacancy': 'app.migrations.garpix_vacancy'
 })
+
+API_URL = 'api'

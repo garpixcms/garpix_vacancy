@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from ..models import Contact
+from ..models import EmploymentType
 
 
 class EmploymentTypeSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Contact
+        model = EmploymentType
         fields = '__all__'

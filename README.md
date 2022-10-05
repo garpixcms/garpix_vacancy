@@ -1,12 +1,28 @@
 # Garpix Vacancy
 
+Vacancy module for Django/DRF projects. Part of GarpixCMS.
+
+Module features:
+- creates models:
+  - Vacancy, 
+  - Contact, 
+  - ContactType, 
+  - EmploymentType, 
+  - Tag, 
+  - VacancyApplication 
+and all it's serializers;
+- adds endpoints:
+  - GET /vacancy/ 
+  - GET /vacancy/{id} 
+  - GET /vacancy_application/{id}
+  - POST /vacancy_application/
 
 ## Quickstart
 
 Install with pip:
 
 ```bash
-pip install garpix_user
+pip install garpix_vacancy
 ```
 
 Add the `garpix_vacancy` to your `INSTALLED_APPS`:
@@ -57,6 +73,7 @@ GARPIX_VACANCY_TAG_MODEL = 'app.models.Tag'
 
 ```
 
+See `garpix_vacancy/tests/*.py` for examples.
 
 # Changelog
 

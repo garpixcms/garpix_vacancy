@@ -1,2 +1,2 @@
-from .vacancy import VacancyListView
-from .application import VacancyApplicationView
+from .vacancy import VacancyListView, VacancyApiView, VacancyView
+from .application import VacancyApplicationView, VacancyApplicationApiView, VacancyApplicationListView

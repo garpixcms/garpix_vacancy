@@ -29,6 +29,9 @@ class Vacancy(ActiveMixin, models.Model):
 
     tags = models.ManyToManyField(TagModel, blank=True, verbose_name=_('Теги'))
 
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('Дата создания'))
+    updated_at = models.DateTimeField(auto_now=True, verbose_name=_('Дата изменения'))
+
     objects = models.Manager()
 
     def __str__(self):
