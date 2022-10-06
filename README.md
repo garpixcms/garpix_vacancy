@@ -77,11 +77,11 @@ See `garpix_vacancy/tests/*.py` for examples.
 
 # Changelog
 
-Смотри [CHANGELOG.md](CHANGELOG.md).
+Смотри [CHANGELOG.md](backend/garpix_vacancy/CHANGELOG.md).
 
 # Contributing
 
-Смотри [CONTRIBUTING.md](CONTRIBUTING.md).
+Смотри [CONTRIBUTING.md](backend/garpix_vacancy/CONTRIBUTING.md).
 
 # License
 

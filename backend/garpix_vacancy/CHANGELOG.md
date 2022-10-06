@@ -4,6 +4,7 @@
 - Tags added
 - Employment types added
 - Vacancy applications model and views added
+- Test added
 
 ### 1.0.0 (20.07.2021)
 
