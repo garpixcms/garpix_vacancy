@@ -14,8 +14,9 @@ and all it's serializers;
 - adds endpoints:
   - GET /vacancy/ 
   - GET /vacancy/{id} 
-  - GET /vacancy_application/{id}
-  - POST /vacancy_application/
+  - GET /vacancy/{vacancy_pk}/vacancy_application/
+  - GET /vacancy/{vacancy_pk}/vacancy_application/{id}
+  - POST /vacancy/{vacancy_pk}/vacancy_application/
 
 ## Quickstart
 
@@ -73,7 +74,7 @@ GARPIX_VACANCY_TAG_MODEL = 'app.models.Tag'
 
 ```
 
-See `garpix_vacancy/tests/*.py` for examples.
+See `garpix_vacancy/tests/test_vacancy.py` for examples.
 
 # Changelog
 
