@@ -1,6 +1,6 @@
 # Garpix Vacancy
 
-Vacancy module for Django/DRF projects. Part of GarpixCMS.
+Vacancy module for Django/DRF projects.
 
 Module features:
 - creates models:
