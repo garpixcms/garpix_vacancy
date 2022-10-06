@@ -30,5 +30,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'garpixcms >= 3.37.0',
+        'drf-nested-routers == 0.93.4'
     ],
 )
