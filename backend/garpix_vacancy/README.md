@@ -18,6 +18,7 @@ and all it's serializers;
   - GET /vacancy/{vacancy_pk}/vacancy_application/{id}
   - POST /vacancy/{vacancy_pk}/vacancy_application/
 
+
 ## Quickstart
 
 Install with pip:
@@ -78,11 +79,11 @@ See `garpix_vacancy/tests/test_vacancy.py` for examples.
 
 # Changelog
 
-Смотри [CHANGELOG.md](backend/garpix_vacancy/CHANGELOG.md).
+Смотри [CHANGELOG.md](CHANGELOG.md).
 
 # Contributing
 
-Смотри [CONTRIBUTING.md](backend/garpix_vacancy/CONTRIBUTING.md).
+Смотри [CONTRIBUTING.md](CONTRIBUTING.md).
 
 # License
 
